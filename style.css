@@ -1,0 +1,582 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/assets/arsenica/ArsenicaTrial-Bold.ttf') format('truetype');
+  
+}
+
+*{
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    max-width: 1050px;
+    margin: 0 auto;
+    font-family: "Kalam", cursive;
+    font-optical-sizing: auto;
+    background-color:whites;
+    background-color: rgb(252, 252, 249);
+    
+  }
+
+ /* Desktop_Nav */
+
+ nav , .nav-links{
+    display: flex;
+ }
+ nav{
+    justify-content: space-between;
+    height: 17vh;
+    align-items: center;
+
+ }
+
+ .nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+ }
+
+ a{
+    text-decoration: none;
+    color: black;
+    position: relative; /*Required for the ::after pseudo-element*/
+    padding-bottom: 0.3rem; /* Adding a bit of space for the underline */
+
+ }
+ 
+ a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: rgb(4, 57, 40);
+    transition: width 0.4s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Keyframes for line appearance and disappearance */
+@keyframes growShrink {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+a:hover::after {
+    animation: growShrink 0.5s forwards;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+  }
+/* Hamburger-nav*/
+
+#hamburger-nav {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 24px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    width: 100%;
+    height: 1.75px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links li {
+    list-style: none;
+  }
+  
+  .menu-links.open {
+    max-height: 300px;
+  }
+  
+  .hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 2px);
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -2.5px);
+  }
+  
+  .hamburger-icon span:first-child {
+    transform: none;
+  }
+  
+  .hamburger-icon span:first-child {
+    opacity: 1;
+  }
+  
+  .hamburger-icon span:first-child {
+    transform: none;
+  }
+  /*profile section*/
+  .image_container_profile{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .profile_img {
+    height: 300px;
+    width: auto;
+    padding: 2rem;
+    z-index: 1;
+    transform: rotate(-15deg);
+    position: relative;
+    transition: transform 2.2s ease-in-out; /* Smooth transition */
+    cursor: pointer;
+  }
+  
+  .profile_img:hover {
+    transform: rotate(7.5deg);
+  }
+.profile_name{
+  font-size: 4.5rem;
+  font-family: MyCustomFont;
+  margin-top: -25rem;
+  z-index: 2; 
+  position: relative;
+}
+.profile_exp{
+  font-size: 3.5rem;
+  font-family: MyCustomFont;
+  margin-top: 17rem;
+  z-index: 2; 
+  position: relative;
+}
+ 
+#About_me{
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+}
+.title_text_about_me{
+ justify-content: center;
+ text-align: center;
+ 
+ 
+}
+.About_me_title{
+  font-size: 3rem;
+}
+.Catch_Line{
+  color: rgb(123, 122, 122);
+  font-size: 1.1rem;
+}
+.about_section_picture{
+  height: 350px;
+  width: auto;
+  border-radius: 2rem;
+  filter: brightness(90%);
+}
+.main_section_of_about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+.box1_about_section, .box3_about_section {
+   
+  width: 7rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  text-align: center;
+  border-radius: 2rem ;
+ margin: 2rem 1rem;
+}
+
+
+.box_content{
+  display: flex;
+ margin-left: 12rem;
+  
+
+}
+.article_about_section{
+width: 42.5rem;
+text-align: justify;
+color:  rgb(123, 122, 122);
+}
+.Exp_picture,.Education_picture{
+  height: 2rem;
+}
+.def_about{
+color:  rgb(123, 122, 122);
+}
+
+
+.Download_cv_btn{
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid black;
+  width: 7.5rem;
+  background-color: black;
+  cursor: pointer;
+  }
+  .Download_cv_btn:hover{
+    
+    background-color:white;
+    .Download_cv_txt{
+      color: black;
+     }
+  
+    }
+    .Contact_btn{
+      padding: 1rem;
+      border-radius: 1.5rem;
+      border: 1px solid black;
+      width: 7.5rem;
+      background-color: white;
+      cursor: pointer;
+    }
+    .Contact_btn:hover{
+      background-color:black;
+    .Contact_txt{
+      color: white;
+     }
+    }
+    
+    .Contact_txt{
+      color:black;
+  font-weight: bold;
+    }
+
+.Download_cv_txt{
+  color:white;
+  font-weight: bold;
+}
+
+/*Experience Section */
+
+.title_Experience_section{
+  text-align: center;
+}
+.catch_line{
+  color: rgb(123, 122, 122);
+  font-size: 1.2rem;
+}
+.heading_Explore{
+  font-size: 3rem;
+}
+.main_Experience_section{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.box1_Experience_section,.box2_Experience_section{
+  border: 1px solid rgb(123, 122, 122);
+ width: 50%;
+  height: 25rem; /*make it auto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  
+
+}
+.title_box1,.title_box2{
+  padding: 2rem;
+  font-size: 1.5rem;
+  /* font-weight:100; */
+  color: rgb(123, 122, 122);
+}
+.inner_box1,.inner_box2{
+  height: 5rem;
+  width: 10rem;
+  display: flex;
+ gap: 0.1rem;
+}
+
+.main_box{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.checkmark{
+  height: 2.1rem;
+}
+.experience_level{
+  color: rgb(123, 122, 122);
+  text-align:start;
+  font-size: 0.9rem;
+}
+.experience_name{
+  text-align: start;
+  font-size: 1.25rem;
+}
+.skill_box{
+  height: 20rem;
+  width: 75%;
+  border: 1px solid rgb(123, 122, 122);
+  border-radius: 2rem;
+ margin-left: 10rem;
+
+}
+.title_skill{
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: rgb(123, 122, 122);
+  text-align: center;
+}
+.skill_icon{
+  margin-left: 1rem;
+  height: 2rem;
+}
+.skill_1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+}
+.skill_text{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.1rem 0.4rem;
+}
+
+
+/*Projects Section*/
+.title_Projects_section{
+  justify-items: center;
+  text-align: center;
+  margin-top: 12rem;
+
+}
+.box_section_project{
+  display: flex;
+  gap: 2rem;
+}
+
+.box1_project,.box2_project{
+  border: 1px solid rgb(123, 122, 122);
+  width: 32rem;
+  height: 37rem;
+  border-radius: 2rem;
+  text-align: center;
+ 
+  
+}
+.picture_project_1,.picture_project_2{
+  height: 25rem;
+  width: auto;
+  margin: 2rem 8rem  0.5rem  8rem;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+  
+}
+.Project_no{
+  font-size: 2rem;
+  font-weight: 550;
+}
+.button_1_project,.button_2_project{
+ background-color: white;
+ padding: .75rem;
+ width: 8rem;
+ border: 2px solid rgb(123, 122, 122);
+ border-radius: 1.75rem;
+ font-size: .8rem;
+ font-weight: bold;
+}
+.button_1_project:hover,.button_2_project:hover{
+  background-color: rgb(53, 53, 53);
+  
+
+  .Project_link_text{
+    color: white;
+  }
+
+}
+
+
+
+/*Education*/
+ 
+ table {
+  margin-top: 2rem;
+  width: 100%;
+  border: 1px solid rgb(123, 122, 122);
+  border-spacing: 0; 
+  padding: 20px 40px;
+ border-radius: 2rem;
+  overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+th, td {
+  /*border: 1px solid #a9a9a9; Dark grey border color */
+  border: none;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: white; /* Light grey background for header */
+  color: #333; /* Dark text color for header */
+}
+
+tr:nth-child(even) {
+  background-color: white; /* Light grey background for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: white; /* White background for odd rows */
+}
+/*Contact Section*/
+
+.title_Contact_section{
+  justify-items: center;
+  text-align: center;
+  margin-top: 12rem;
+}
+.main_contact_section
+{display: flex;
+  gap: 3rem;
+  margin:2rem 0 ;
+  align-items: center;
+}
+.box1_contact,.box2_contact,.box3_contact{
+   border: 1px solid rgb(123, 122, 122);
+   opacity: 100%;
+   border-radius: 2rem;
+   height: 10rem;
+   width: 20rem;
+  text-align: center;  
+}
+.Email_img{
+  scale: 0.5;
+  margin-bottom: 0.4rem;
+}
+
+.Contact_way_text{
+  margin-top: -1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.address{
+  color: rgb(53, 53, 53);
+  padding: 0.25rem;
+}
+
+.scribbled-arrow{
+  height: 1.5rem;
+  margin-top: -0.175rem;
+  padding-left: 0.5rem;
+}
+.write_me{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.whatsapp_img{
+  scale: 0.06;
+  margin-bottom: -13.5rem;
+  margin-left: -5.75rem;
+  margin-top: -14rem;
+}
+.Messenger_img{
+  scale: 0.05;
+  margin-bottom: -13.5rem;
+  margin-left: -5.75rem;
+  margin-top: -14rem;
+}
+
+
+/*footer*/
+
+.footer_nav{
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  
+}
+.nav_link_footer{
+  font-size: 1.5rem;
+  margin: 3rem;
+  
+}
+
+.footer_copyright{
+  margin-top: -2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.copyright_text{
+  color: rgb(123, 122, 122);
+}
+.footer_social_media{
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.Facebook_image{
+  height: 1.5rem;
+  padding: 0.2rem;
+
+}
+.Instagram_image{
+  height:1.45rem;
+  padding: 0.2rem;
+}
+.Linkedin_image{
+  height: 1.45rem;
+  padding: 0.2rem;
+}

@@ -1,0 +1,274 @@
+@media screen and (max-width: 1050px) {
+    #Desktop_nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+      margin: 2rem;
+      height: 8vh;
+    }
+   .logo{
+    font-size: 1.5rem;   }
+    .menu-links a {
+    
+        font-size: 1.2rem;
+        
+      }
+      #profile {
+        scale: 0.8;
+        margin-bottom: -10rem;
+        
+      }
+      
+      .profile_name{
+        font-size: 2.75rem;
+        
+      }
+      .profile_exp{
+        font-size: 2.4rem;
+        margin-top: 19.5rem;
+      
+      }
+/*About Me section*/
+@media screen and (max-width: 1050px) {
+#About_me{
+  margin-top: 0rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  scale: 0.95;
+}
+.box_content,.main_section_of_about{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.article_about_section {
+  display: inline;
+  text-align: justify;
+  
+}
+.box1_about_section{
+ margin: 0 ;
+}
+.box2_about_section{
+  margin-bottom: 2rem;
+  
+}
+.box_content{
+  display: flex;
+  flex-direction: row;
+ gap: 1rem;
+  
+
+}
+}
+@media screen and (max-width: 600px){
+  #About_me{
+    margin-top: 4rem;
+    margin-bottom: -14rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    scale: 0.75;
+  }
+  .about_section_picture{
+    scale: 0.85;
+    margin-bottom: -2rem;
+    
+    
+  }
+
+}
+
+@media screen and (max-width: 1050px){
+.main_Experience_section{
+display: flex;
+flex-direction: column;
+}
+.box1_Experience_section,.box2_Experience_section{
+  border: 1px solid rgb(123, 122, 122);
+ width: 100%;
+  height: auto; /*make it auto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  
+
+}
+.main_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+#Experience{
+  scale: .75;
+}
+}
+
+
+/*Project Section*/
+@media screen and (max-width: 1050px){
+  #Projects{
+   
+    scale: 0.8;
+    margin-top: -25rem;
+    margin-bottom: 10rem;
+  }
+  
+  .box1_project,.box2_project{
+   
+    width: 25rem;
+    height: 35rem;}
+
+    .picture_project_1,.picture_project_2{
+      
+      margin: 2rem 4rem  0.5rem  4rem;
+}
+.Project_no{
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+}
+/*Exp section*/
+.skill_box{
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  
+}
+.skill_1{
+  scale: 0.8;
+  margin-left: 0;
+}
+/*Exp section*/
+#Education{
+  scale: 0.7;
+  margin-top: -18rem;
+}
+/* Contact Section*/
+@media screen and (max-width: 1050px){
+
+  .title_contact{
+    font-size: 2rem;
+  }
+  .contact-info-upper-container {
+    
+    border: none;
+   
+    margin: 0rem auto;
+    padding: 0.1rem;
+    width: 20rem;
+  
+  }
+  .contact-info-container {
+    
+    gap: 0.2rem;
+    margin: 0rem;
+  }
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+  .section__text__p1{
+    color: rgb(123, 122, 122);
+    font-size: 1rem;
+  }
+  
+  .icon_contact-icon{
+    height: 2rem;
+  }
+  .icon_contact-icon2{
+    height: 1.5rem;
+  }
+  #contact{
+    
+    margin-top: -10rem;
+
+  }
+
+
+  /*Contact Section*/
+.main_contact_section
+{display: flex;
+  flex-direction: column;
+  scale: 0.8;
+}
+.box1_contact{
+  margin-top: -5rem;
+}
+#Contact
+{
+  margin-top: -12rem;
+}
+
+}
+
+
+
+/*title error*/
+@media screen and (max-width: 1050px){
+  .title_Contact_section{
+  scale: 0.55;
+  margin-bottom: -1rem;
+  }
+  .title_Projects_section{
+scale: 0.7;
+  }
+  .title_Experience_section{
+   scale: 0.75;
+  }
+  .title_text_about_me{
+    scale: 0.775;
+   }
+
+   /*footer*/
+  
+   .nav_link_footer{
+    font-size: 0.75rem;
+    
+    
+  }
+  .footer_nav{
+    margin: -1rem;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .left_nav,.right_nav{
+    display: flex;
+   margin: 0rem;
+   
+  }
+  .nav_link_footer{
+    font-size: 0.75rem;
+    margin: 0.6rem;
+    
+  }
+  .footer_social_media{
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    scale: .85;
+  }
+  .footer_copyright{
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.6rem;
+
+  }
+  
+  
+    
+  
+    
+  }
+  
+}

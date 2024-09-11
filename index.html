@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Potfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediascreen.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <nav id="Desktop_nav">
+        <div class="logo">Md Abulich Lupon</div>
+        <div>
+            <ul class="nav-links">
+               <li><a href="#About_me">About</a></li>
+               <li><a href="#Experience">Experience</a></li>
+               <li><a href="#Projects">Projects</a></li>
+               <li><a href="#Education">Education</a></li>
+               <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+     
+    <nav id="hamburger-nav">
+        <div class="logo">Md Abulich Lupon</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+     <section id="profile">
+      <div class="image_container_profile">
+        <img src="./Images/home1.png" alt="profile_img" class="profile_img">
+        <p class="profile_name">Md Abulich Lupon</p>
+        <p class="profile_exp">Frontend Developer </p>
+      </div>
+      </section>
+      
+      <section id="About_me">
+        <div class="title_text_about_me"> 
+          <p class="Catch_Line">Get To Know More</p>
+          <h1 class="About_me_title">About Me</h1>
+        </div>
+        <div class="main_section_of_about">
+          <div class="left_content_about_section">
+            <img src="./Images/second.JPG" alt="about_section_picture" class="about_section_picture">
+          </div>
+          <div class="right_content_about_section">
+            <div class="article_about_section">
+I’m a passionate problem solver and algorithm thinker, currently studying at Rajshahi University of Engineering and Technology. With a solid foundation in data structures and algorithms, I explore innovative technologies to create efficient solutions. My experience in cybersecurity, particularly cryptography, is highlighted by my participation in CTF competitions. I thrive in team environments, enjoy traveling, and love communicating with new people. My enthusiasm for continuous learning drives me to stay updated with the latest advancements and seek out new challenges. I am dedicated to applying my skills in real-world scenarios and contributing to impactful projects.
+            </div>
+          
+            <div class="box_content">
+              <div class="box1_about_section"> <button
+                class="Download_cv_btn"
+                onclick="window.open('./assets/my_cv.pdf')"
+              >
+                <p class="Download_cv_txt">Download CV</p>
+              </button>
+                
+              </div>
+              
+              <div class="box3_about_section"> <button
+                class="Contact_btn"
+                onclick="document.getElementById('Contact').scrollIntoView()"
+              >
+                <p class="Contact_txt">Contact Me</p>
+              </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Experience">
+        <div class="title_Experience_section">
+        <p class="catch_line">Explore My</p>
+        <h1 class="heading_Explore">Expertise & Skill </h1>
+        </div>
+        <div class="main_Experience_section">
+          <div class="box1_Experience_section">
+            <p class="title_box1"> Development</p>
+            <div class="main_box">
+            <div class="inner_box1">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">HTML</h1></div>
+                <div class="experience_level">Experienced</div>
+              </div>
+            </div>
+
+
+            <div class="inner_box2">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">CSS</h1></div>
+                <div class="experience_level" >Experienced</div>
+              </div>
+            </div>
+          </div>
+          <div class="main_box">
+            <div class="inner_box1">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">JavaScript</h1></div>
+                <div class="experience_level">Intermediate</div>
+              </div>
+            </div>
+            <div class="inner_box2">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">Bootstrap</h1></div>
+                <div class="experience_level">Basic</div>
+              </div>
+            </div>
+          </div>
+          <div class="main_box">
+            <div class="inner_box1">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">My SQL</h1></div>
+                <div class="experience_level">Intermediate</div>
+              </div>
+            </div>
+            <div class="inner_box2">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">React</h1></div>
+                <div class="experience_level">Basic</div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="box2_Experience_section">
+            <p class="title_box1">Programming Languages & Others </p>
+            <div class="main_box">
+            <div class="inner_box1">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">JAVA</h1></div>
+                <div class="experience_level">Intermediate</div>
+              </div>
+            </div>
+            <div class="inner_box2">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">C & C++</h1></div>
+                <div class="experience_level">Intermediate</div>
+              </div>
+            </div>
+          </div>
+          <div class="main_box">
+            <div class="inner_box1">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">Matlab</h1></div>
+                <div class="experience_level">Intermediate</div>
+              </div>
+            </div>
+            <div class="inner_box2">
+              <div class="experience_img"><img src="./Images/checkmark.png" alt="checkmark" class="checkmark"></div>
+              <div class="experience_text">
+                <div><h1 class="experience_name">Cryptography</h1></div>
+                <div class="experience_level">Experienced</div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <div class="skill_box">
+          <p class="title_skill"> Soft Skill</p>
+          <div class="skill_1">
+          <div class="icon"><img src="./Images/skill.png" alt="skill_icon" class="skill_icon"></div>
+          <div class="skill_text">Associate Director , Logistics at HULT PRIZE at RUET </div>
+          </div>
+          <div class="skill_1">
+            <div class="icon"><img src="./Images/skill.png" alt="skill_icon" class="skill_icon"></div>
+            <div class="skill_text">Organizing Secretary  ,Kurigram District Association  </div>
+            </div>
+          <div class="skill_1">
+            <div class="icon"><img src="./Images/skill.png" alt="skill_icon" class="skill_icon"></div>
+            <div class="skill_text">Treasurer ,RUET Cyber Security Club  </div>
+            </div>
+        
+        
+      </div>
+      </section>
+      <section id="Projects">
+        <div class="title_Projects_section">
+          <p class="catch_line">Browse My Recent </p>
+          <h1 class="heading_Explore">Projects</h1>
+          </div>
+          <div class="main_Experience_section">
+            <div class="box_section_project">
+              <div class="box1_project">
+                <img src="./Images/project_1.png" alt="project_1" class="picture_project_1">
+                <p class="Project_no">RCSC Website</p>
+                <button class="button_1_project" onclick="navigateTo('https://github.com/Even-prime/RUETCyber')">
+                  <p class="Project_link_text">Github</p>
+              </button>
+              <button class="button_2_project" onclick="navigateTo('https://even-prime.github.io/RUETCyber/')">
+                  <p class="Project_link_text">Live Demo</p>
+              </button>
+              
+              
+                </div>
+              </div>
+              <div class="box2_project">
+                <img src="./Images/project_2.png" alt="project_2_project" class="picture_project_2">
+                <p class="Project_no">My Portfolio</p>
+                <button class="button_1_project" onclick="navigateTo('https://github.com/Even-prime/RUETCyber')">
+                  <p class="Project_link_text">Github</p>
+              </button>
+              <button class="button_2_project" onclick="navigateTo('https://even-prime.github.io/RUETCyber/')">
+                  <p class="Project_link_text">Live Demo</p>
+              </button>
+              
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+      <section id="Education">
+        <div class="title_Projects_section">
+          <p class="catch_line">Check Out My </p>
+          <h1 class="heading_Explore">Education</h1>
+        </div>
+        <div class="Education_box">
+       
+          <table>
+            
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor of Science(ETE)</td>
+                    <td>Rajshahi University of Engineering and Technology,Rajshahi</td>
+                    <td>CGPA 3.31</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary Certificate(Science)</td>
+                    <td>Police Lines School and College , Rangpur </td>
+                    <td>GPA 5.00</td>
+                </tr>
+                <tr>
+                    <td>Secondary School Certificate(Science)</td>
+                    <td>Kurigram Govt High School , Kurigram</td>
+                    <td>GPA 5.00</td>
+                </tr>
+               
+            </tbody>
+        </table>
+       
+        </div>
+
+      </section>
+      <section id="Contact">
+        <div class="title_Contact_section">
+          <p class="catch_line">Get in Touch</p>
+          <h1 class="heading_Explore">Contact</h1>
+          </div>
+          <div class="main_contact_section">
+              <div class="box1_contact">
+                <img src="./Images/icons8-email-32.png" alt="Email_img" class="Email_img">
+                <p class="Contact_way_text">Email</p>
+                <p class="address">sopnil.lupon@gmail.com</p>
+                <div class="write_me">
+                  <div>Write me </div>
+                  <div class="arrow_image"><a href="mailto:sopnil.lupon@gmail.com"><img src="./Images/swirly-scribbled-arrow.png" alt="scribbled-arrow" class="scribbled-arrow"></a></div>
+                </div>
+              </div>
+              <div class="box2_contact">
+                <img src="./Images/whatsapp.png" alt="whatsapp_img" class="whatsapp_img">
+                <p class="Contact_way_text">Whatsapp</p>
+                <p class="address">+8801581094142</p>
+                <div class="write_me">
+                  <div>Write me </div>
+                  <div class="arrow_image"><a href="https://wa.me/+8801581094142"><img src="./Images/swirly-scribbled-arrow.png" alt="scribbled-arrow" class="scribbled-arrow"></a></div>
+                </div>
+              </div>
+              <div class="box3_contact">
+                <img src="./Images/messenger.png" alt="Messenger_img" class="Messenger_img">
+                <p class="Contact_way_text">Messenger</p>
+                <p class="address">Md Abulich Lupon</p>
+                <div class="write_me">
+                  <div>Write me </div>
+                  <div class="arrow_image"><a href="https:/m.me?mdsopnil.lupon"><img src="./Images/swirly-scribbled-arrow.png" alt="scribbled-arrow" class="scribbled-arrow"></a></div>
+                </div> 
+              </div>
+          </div>
+             
+      </section>
+      
+      <section id="Footer">
+        <div class="footer_nav">
+          <div class="left_nav">
+            <a href="#About_me" class="nav_link_footer">About</a>
+            <a href="#Experience" class="nav_link_footer">Experience</a>
+          </div>
+          <div class="right_nav">
+            <a href="#Projects" class="nav_link_footer">Projects</a>
+            <a href="#Education" class="nav_link_footer">Education</a>
+            <a href="#Contact" class="nav_link_footer">Contact</a>
+          </div>
+
+        </div>
+        <div class="footer_social_media">
+          <a href="https://www.facebook.com/mdsopnil.lupon/"><img src="./Images/facebook.png" alt="Facebook_image" class="Facebook_image"></a>
+          <a href="https://www.instagram.com/md_sopnil_lupon/"><img src="./Images/social_15522187.png" alt="Facebook_image" class="Instagram_image"></a>
+          <a href="https://www.linkedin.com/in/abulichlupon//"><img src="./Images/linkedin_3536569.png" alt="Linkedin_image" class="Linkedin_image"></a>
+        </div>
+        <div class="footer_copyright">
+          <p class="copyright_text">Copyright © 2024 Md Abulich Lupon. All Rights Reserved.</p>
+        </div>
+      </section>
+      
+
+</body>
+</html>
